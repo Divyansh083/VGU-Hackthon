@@ -1,0 +1,151 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+:root{
+    --primary: #c3efe9;
+    --darkerprimary: #11999e;
+    --secondary: #e4f5f9;
+    --darkesttext:#40514e;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+.buyer .list-unstyled{
+    padding-left: 10px;
+    text-align: left;
+    font-size: 12px;
+}
+
+.buyer .card{
+    width: 18rem;
+}
+
+.buyer #title{
+    background-color: var(--darkerprimary);
+    color : var(--primary);
+}
+
+.buyer a.fas {
+    position: relative;
+    font-size: 20px;
+    text-decoration: none;
+    color: black;
+}
+
+
+.buyer .container{
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.buyer .col-lg-3 .btn.btn-primary {
+    width: 100%;
+    height: 43px;
+    box-shadow: none;
+    outline: none;
+    background-color: var(--primary);
+    color: var(--darkesttext);
+    font-weight: 800;
+    padding: 0px 15px;
+    line-height: 22px;
+    border: none;
+}
+
+.buyer .col-lg-3 .btn.btn-primary:focus {
+    outline: none;
+    box-shadow: none;
+}
+
+.buyer .col-lg-3 .btn.btn-primary:hover {
+    background-color: var(--darkerprimary);
+    color: var(--secondary)
+
+}
+
+.buyer .col-lg-3 ul {
+    width: 100%;
+}
+
+
+.buyer .col-lg-9 .btn.btn-secondary {
+    width: 100%;
+    height: 100% !important;
+    box-shadow: none;
+    outline: none;
+    background-color: transparent;
+    color: var(--darkesttext);
+    font-weight: 800;
+    padding: 15px;
+}
+
+.buyer .col-lg-9 .btn.btn-primary {
+    background-color: var(--primary);
+    color: var(--darkesttext);
+    border: none;
+    height: 100%;
+    width: 100px;
+}
+
+.buyer .col-lg-9 .btn.btn-primary:hover {
+    background-color: var(--darkerprimary);
+    color: var(--secondary);
+}
+
+/* .sec-bar{
+    flex: 50%;
+} */
+
+.buyer .col-lg-9 ul {
+    width: 100%;
+}
+
+.buyer .productswidth{
+    width: 900px;
+    overflow-x: hidden;
+}
+
+.buyer input {
+    width: 230px;
+    border:#40514e;
+    outline: none;
+}
+
+.buyer p {
+    margin: 0%;
+}
+
+.buyer .rowflex{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: center;
+    align-items: center;
+}
+
+.buyer .product_image{
+    width: 50%;
+}
+
+.buyer .addtocart{
+    padding: 3px;
+}
+
+@media(max-width:1022px) {
+    .buyer input {
+        width: 100%;
+        border: none;
+    }
+
+}
+
+li .dropdown-item :hover{
+    background-color: var(--primary) !important;
+    padding: 2px 4px !important;
+}
+

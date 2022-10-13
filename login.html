@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="./Styles/login.css" />
+        <!-- <link
+            href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css"
+            rel="stylesheet"
+            integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor"
+            crossorigin="anonymous"
+        /> -->
+        <link
+            rel="stylesheet"
+            href="https://unicons.iconscout.com/release/v4.0.0/css/line.css"
+        />
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap"
+            rel="stylesheet"
+        />
+        <title>Login</title>
+    </head>
+    <body>
+        <div class="container">
+            <div class="forms">
+                <div class="form login">
+                    <span class="title">Login</span>
+                    <form action="#" id="login-form">
+                        <div class="input-field">
+                            <input
+                                type="text"
+                                placeholder="Enter your email"
+                                id="login_email"
+                                required
+                            />
+                            <i class="uil uil-at icon"></i>
+                        </div>
+                        <div class="input-field">
+                            <input
+                                type="password"
+                                class="password"
+                                placeholder="Enter your password"
+                                id="login_password"
+                                required
+                            />
+                            <i class="uil uil-padlock icon"></i>
+                            <i class="uil uil-eye-slash showHidePw"></i>
+                        </div>
+                        <div class="checkbox-text">
+                            <div class="checkbox-content">
+                                <input type="checkbox" id="logCheck" />
+                                <label for="logCheck" class="text"
+                                    >Remember Me</label
+                                >
+                            </div>
+                            <a href="#" class="text">Forgot Password?</a>
+                        </div>
+                        <div class="input-field button">
+                            <input type="submit" value="Login" />
+                        </div>
+                    </form>
+                    <div class="login-signup">
+                        <span class="text"
+                            >Not a member?
+                            <a href="#" class="text signup-link">Signup now.</a>
+                        </span>
+                    </div>
+                </div>
+                <!-- Registration Form -->
+                <div class="form signup">
+                    <span class="title">Registration</span>
+                    <form action="#" id="reg-form">
+                        <div class="input-field">
+                            <input
+                                type="text"
+                                placeholder="Enter your name"
+                                id="reg_name"
+                                required
+                            />
+                            <i class="uil uil-user"></i>
+                        </div>
+                        <div class="input-field">
+                            <input
+                                type="text"
+                                placeholder="Enter your email"
+                                id="reg_email"
+                                required
+                            />
+                            <i class="uil uil-at icon"></i>
+                        </div>
+                        <div class="input-field">
+                            <input
+                                type="password"
+                                class="password"
+                                id="reg_password"
+                                placeholder="Create a password"
+                                required
+                            />
+                            <i class="uil uil-padlock icon"></i>
+                        </div>
+                        <div class="input-field">
+                            <input
+                                type="password"
+                                class="password"
+                                id="reg_confirm_password"
+                                placeholder="Confirm password"
+                                required
+                            />
+                            <i class="uil uil-padlock icon"></i>
+                            <i class="uil uil-eye-slash showHidePw"></i>
+                        </div>
+                        <div class="checkbox-text">
+                            <div class="checkbox-content">
+                                <input type="checkbox" id="signCheck" />
+                                <label for="signCheck" class="text"
+                                    >Remember Me</label
+                                >
+                            </div>
+                        </div>
+                        <div class="input-field button">
+                            <input type="submit" value="Sign Up"/>
+                        </div>
+                    </form>
+                    <div class="login-signup">
+                        <span class="text"
+                            >Already a member?
+                            <a href="#" class="text login-link">Login now.</a>
+                        </span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <script>
+            const login_form = document.getElementById('login-form');
+            login_form.addEventListener('submit', loginUser);
+
+            async function loginUser(event){
+                event.preventDefault();
+                const login_email = document.getElementById('login_email').value;
+                const login_password = document.getElementById('login_password').value;
+
+                const result = await fetch('/api/login', {
+                    method: 'POST',
+                    headers: {
+                        'Content-Type': 'application/json'
+                    },
+                    body: JSON.stringify({
+                        login_email,
+                        login_password,
+                    })
+                }).then((res) => res.json())
+                if (result.status === 'ok') {
+                    // everything is fine
+                    console.log("Got the token: ", result.data);
+                    alert('Successfully logged in');
+                }
+                else{
+                    alert(result.error);
+                }
+                console.log(result);
+            }
+            const reg_form = document.getElementById('reg-form');
+            reg_form.addEventListener('submit', registerUser);
+
+            async function registerUser(event){
+                event.preventDefault();
+                const reg_name = document.getElementById('reg_name').value;
+                const reg_email = document.getElementById('reg_email').value;
+                const reg_password = document.getElementById('reg_password').value;
+
+                const result = await fetch('/api/register', {
+                    method: 'POST',
+                    headers: {
+                        'Content-Type': 'application/json'
+                    },
+                    body: JSON.stringify({
+                        reg_name,
+                        reg_email,
+                        reg_password,
+                    })
+                }).then((res) => res.json())
+                if (result.status === 'ok') {
+                    // everything is fine
+                }
+                else{
+                    alert(result.error);
+                }
+                console.log(result);
+            }
+        </script>
+    </body>
+</html>
+<script src="./Scripts/login.js"></script>

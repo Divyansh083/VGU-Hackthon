@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import "./contact_us.css";
+import "./Contact.css";
 import validator from "validator";
 
 const Contact = () => {

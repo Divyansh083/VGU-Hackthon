@@ -9,7 +9,7 @@ const jwt = require("jsonwebtoken");
 const JWT_SECRET = "sdfbsdhfgbsdifhsdkjfghsdkjgfsdfgvsdfijghvbffgdsfgsdfg";
 //^yes this is random
 mongoose.connect(
-    "<to_add>>",
+    "mongodb+srv://admin:admin@cluster0.mtkw3nh.mongodb.net/test",
     {
         useNewUrlParser: true,
         useUnifiedTopology: true,

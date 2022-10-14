@@ -1,0 +1,59 @@
+/* (A) HIDE CHECKBOX */
+.togCheck { display: none; }
+ 
+/* (B) HIDE CONTENT BY DEFAULT */
+.togContent {
+  max-height: 0;
+  opacity: 0;
+  visibility: hidden;
+  transition: max-height 1s;
+  margin-left: 6rem;
+  width: auto;
+  padding: 15px;
+  display:inline-block;
+}
+
+/* (C) SHOW CONTENT WHEN CHECKED */
+.togCheck:checked + .togContent {
+    max-height: 200vh; /* any insanely large number if a lot of contents */
+    opacity: 1;
+    visibility: visible;
+  }
+/* (X) COSMETICS - DOES NOT MATTER */
+/* (X1) ENTIRE DEMO */
+* {
+    font-family: arial, sans-serif;
+    box-sizing:content-box;
+  }
+   
+  /* (X2) TOGGLE BUTTON */
+  .togButton{
+    display: block;
+    width: 76%;
+    padding: 15px;
+    color: #fff;
+    background: palevioletred;
+    cursor: pointer;
+    margin-top: 20px;
+    margin-left: 6rem;
+  }
+   
+  /* (X3) CONTENT */
+  .togContent { background: #f4f6ff; }
+  .togContent p
+ {
+    padding: 50px 10px;
+    margin: 0;
+  }
+
+  .head{
+    margin-top: 30px;
+  }
+/*  .img{
+    margin-right: -70rem;
+ } */
+ .col-md-4{
+    align-items: flex-end;
+    float: right;
+    background-image: url("https://img.brainkart.com/imagebk44/rqpWEm7.jpg");
+ }

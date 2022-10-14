@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import "../styles/buyer_dashboard.css";
+import "./buyer_dashboard.css";
 import { Link } from "react-router-dom";
 import axios from "axios";
 import Navbar from "./Navbar";
@@ -7,21 +7,6 @@ import Navbar from "./Navbar";
 function BuyerDashboard() {
   Navbar();
   var c = 0;
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
   // var d = 1;
   // var e = 1;
   // fetching products
@@ -57,7 +42,7 @@ function BuyerDashboard() {
 
   if (post != null) {
     id = post.usertype;
-    status = post.shg_status;
+    status = post.user_status;
   }
 
   // console.log(post);
@@ -79,7 +64,6 @@ function BuyerDashboard() {
   };
 
   const searchProduct = async(pname) => {
-    console.log(`test`);
     try{
       const url = "/api/products/search/:name";
       const res = await axios.get(url, {name: pname}).then((response) => {
@@ -324,7 +308,6 @@ function BuyerDashboard() {
                   <Link to="/cart">
                     <img
                       className="logo logo_light_bg"
-                      src={require("../Images/cart.png")}
                       alt="cart logo"
                     />
                   </Link>
@@ -372,9 +355,9 @@ function BuyerDashboard() {
                         /> 
                         ):(
                           <img
-                          src={
+                        /*   src={
                                p.product_images[0]
-                          }
+                          } */
                           className="card-img-top product-image"
                           alt="soap"
                         /> 

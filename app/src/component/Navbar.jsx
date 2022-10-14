@@ -30,7 +30,9 @@ const Navbar = () => {
         >
           <ul>
             <li>
-              <NavLink to="/" style={{fontFamilt:"cursive"}}>Home</NavLink>
+              <NavLink to="/" style={{ fontFamilt: "cursive" }}>
+                Home
+              </NavLink>
             </li>
             <li>
               <NavLink to="/about">About</NavLink>
@@ -48,26 +50,17 @@ const Navbar = () => {
         <div className="social-media">
           <ul className="social-media-desktop">
             <li>
-              <a
-                href="/"
-                target="_thapa"
-              >
+              <a href="/" target="_thapa">
                 <FaFacebookSquare className="facebook" />
               </a>
             </li>
             <li>
-              <a
-                href="/"
-                target="_thapa"
-              >
+              <a href="/" target="_thapa">
                 <FaInstagramSquare className="instagram" />
               </a>
             </li>
             <li>
-              <a
-                href="/"
-                target="_thapa"
-              >
+              <a href="/" target="_thapa">
                 <FaYoutubeSquare className="youtube" />
               </a>
             </li>

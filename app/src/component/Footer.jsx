@@ -9,11 +9,11 @@ function Footer() {
           {/* Column1 */}
           <div className="col">
             <h4>KISHAAN ROZGAR INC</h4>
-            <h1 className="list-unstyled">
+            <ui className="list-unstyled">
               <li>+91-123456789</li>
               <li>HARYANA,INDIA</li>
               <li>123 Shri Vijay Marg</li>
-            </h1>
+            </ui>
           </div>
           {/* Column2 */}
           <div className="col">

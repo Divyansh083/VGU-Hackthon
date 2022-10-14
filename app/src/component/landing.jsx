@@ -6,14 +6,14 @@ import "bootstrap/dist/css/bootstrap.min.css";
 const LandingPage = () => {
   return (
     <>
-      <section class="banner_main">
+      <section class="banner_main" style={{paddingTop:"20px"}}>
         <div class="container-fluid">
           <div class="row d_flex ">
             <div class="col-xl-4 col-lg-4 col-md-12">
               <div class="banner_main_text">
                 <div class="titlepage">
-                  <h2 style={{ fontSize: 30 }}>Our Moto</h2>
-                  <p>
+                  <h2 style={{ fontSize: "30px" }}>Our Moto</h2>
+                  <p style={{fontFamily:"Copperplate" ,fontSize:"25px"}}>
                     The portal provides large companies with all the information
                     about the crops including sowing techniques and all the
                     activities from pre harvesting to harvesting. <br />
@@ -21,7 +21,7 @@ const LandingPage = () => {
                     the suitable crop ,best practices and pest control
                     techniques.
                   </p>
-                  <Link to="#">Read More</Link>
+                  <Link to="#" style={{fontSize:"20px"}}>Read More</Link>
                 </div>
               </div>
             </div>
@@ -49,10 +49,10 @@ const LandingPage = () => {
             <div class="col-xl-5 col-lg-5 col-md-12">
               <div class="about_text">
                 <div class="titlepage">
-                  <h2 style={{ fontSize: 30 }}>
+                  <h2 style={{ fontSize: "30px" }}>
                     Pradhan Mantri Krishi Sinchai Yojana
                   </h2>
-                  <p>
+                  <p style={{fontFamily:"Copperplate" ,fontSize:"25px"}}>
                     It is a long established fact that a reader will be
                     distracted by the readable content of a page when looking at
                     its layout. The point of using Lorem Ipsum is that it has a
@@ -60,7 +60,7 @@ const LandingPage = () => {
                     using 'Content here, content here', making it look like
                     readable English. Many desktop publishing packages and{" "}
                   </p>
-                  <Link to="#">Read More</Link>
+                  <Link to="#" style={{fontSize:"20px"}}>Read More</Link>
                 </div>
               </div>
             </div>
@@ -73,8 +73,8 @@ const LandingPage = () => {
             <div class="col-xl-5 col-lg-5 col-md-12 order_2">
               <div class="our_text">
                 <div class="titlepage">
-                  <h2 style={{ fontSize: 30 }}>Our Fields</h2>
-                  <p>
+                  <h2 style={{ fontSize: "30px" }}>Our Fields</h2>
+                  <p style={{fontFamily:"Copperplate" ,fontSize:"25px"}}>
                     It is a long established fact that a reader will be
                     distracted by the readable content of a page when looking at
                     its layout. The point of using Lorem Ipsum is that it has a
@@ -82,7 +82,7 @@ const LandingPage = () => {
                     using 'Content here, content here', making it look like
                     readable English. Many desktop publishing packages and{" "}
                   </p>
-                  <Link to="#">Read More</Link>
+                  <Link to="#" style={{fontSize:"20px"}}>Read More</Link>
                 </div>
               </div>
             </div>
@@ -103,7 +103,7 @@ const LandingPage = () => {
               <div class="col-md-12">
                 <div class="cont">
                   <h3 style={{ fontSize: 30 }}>Let’s talk Business</h3>
-                  <p>
+                  <p style={{fontFamily:"Copperplate" ,fontSize:"25px"}}>
                     It is a long established fact that a reader will be
                     distracted by the readable content of a page when looking at
                     its layout. <br />

@@ -17,8 +17,8 @@ const Navbar = () => {
         {/* 1st logo part  */}
         <div className="logo">
           <h2>
-            <span>A</span>grii
-            <span>A</span>pp
+            <span>K</span>isaan
+            <span>R</span>ozgar
           </h2>
         </div>
 
@@ -30,7 +30,7 @@ const Navbar = () => {
         >
           <ul>
             <li>
-              <NavLink to="/">Home</NavLink>
+              <NavLink to="/" style={{fontFamilt:"cursive"}}>Home</NavLink>
             </li>
             <li>
               <NavLink to="/about">About</NavLink>

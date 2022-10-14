@@ -6,6 +6,8 @@ import BuyerDashboard from "./BuyerDashboard";
 import Navbar from "./component/Navbar";
 import Footer from "./component/Footer";
 import LandingPage from "./component/landing";
+import CompanyPage from "./component/company";
+import FarmerPage from "./component/farmer";
 
 
 function App() {
@@ -16,6 +18,8 @@ function App() {
         <Route path="/" element={<LandingPage/>}/>
         <Route path="/contact" element={<Contact />} />
         <Route path="/buyerdashboard" element={<BuyerDashboard/>}/>
+        <Route path="/company" element={<CompanyPage/>}/>
+        <Route path="/farmer" element={<FarmerPage/>}/>
       </Routes>
       <Footer/>
     </div>

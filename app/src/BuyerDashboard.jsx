@@ -2,13 +2,11 @@ import React, { useState } from "react";
 import "./buyer_dashboard.css";
 import { Link } from "react-router-dom";
 import axios from "axios";
-//import Navbar from "./Navbar";
+import Navbar from "./component/Navbar";
 
 function BuyerDashboard() {
-  //Navbar();
+  Navbar();
   var c = 0;
-  // var d = 1;
-  // var e = 1;
   // fetching products
   const [product, setproduct] = React.useState([]);
 

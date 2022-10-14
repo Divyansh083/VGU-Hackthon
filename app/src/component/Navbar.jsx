@@ -18,7 +18,7 @@ const Navbar = () => {
         <div className="logo">
           <h2>
             <span>A</span>gro
-            <span>T</span>ech
+            <span>H</span>elp
           </h2>
         </div>
 
@@ -38,7 +38,7 @@ const Navbar = () => {
               <NavLink to="/about">ABOUT</NavLink>
             </li>
             <li>
-              <NavLink to="/service">SERVICE</NavLink>
+              <NavLink to="/buyerdashboard">ITEMS</NavLink>
             </li>
             <li>
               <NavLink to="/contact">CONTACT US</NavLink>

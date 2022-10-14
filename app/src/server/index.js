@@ -21,14 +21,14 @@ app.use(shgRouter);
 app.use(productRouter);
 
 const connection = mongoose
-  .connect(db)
-  .then((data) => {
-    console.log(" mongodb connected succesfully");
-  })
-  .catch((err) => {
-    console.log(err);
-  });
+    .connect(db)
+    .then((data) => {
+        console.log(" mongodb connected succesfully");
+    })
+    .catch((err) => {
+        console.log(err);
+    });
 
 app.listen(PORT, "0.0.0.0", function () {
-  console.log(`connectes at port ${PORT}`);
+    console.log(`connectes at port ${PORT}`);
 });

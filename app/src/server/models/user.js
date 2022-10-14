@@ -70,8 +70,8 @@ let userSchema = new mongoose.Schema({
 
     status: {
         type: String,
-        enum: ["no", "yes"],
-        default: "yes",
+        enum: ["active", "pending"],
+        default: "pending",
     },
 
     confirmationCode: {

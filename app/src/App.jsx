@@ -8,7 +8,7 @@ import Footer from "./component/Footer";
 import LandingPage from "./component/landing";
 import CompanyPage from "./component/company";
 import FarmerPage from "./component/farmer";
-
+import BestPractices from "./BestPractices";
 
 function App() {
   return (
@@ -20,6 +20,7 @@ function App() {
         <Route path="/buyerdashboard" element={<BuyerDashboard/>}/>
         <Route path="/company" element={<CompanyPage/>}/>
         <Route path="/farmer" element={<FarmerPage/>}/>
+        <Route path="/bestpractices" element={<BestPractices/>}/>
       </Routes>
       <Footer/>
     </div>

@@ -31,47 +31,24 @@ const Navbar = () => {
           <ul>
             <li>
               <NavLink to="/" style={{ fontFamilt: "cursive" }}>
-                Home
+                HOME
               </NavLink>
             </li>
             <li>
-              <NavLink to="/about">About</NavLink>
+              <NavLink to="/about">ABOUT</NavLink>
             </li>
             <li>
-              <NavLink to="/service">Services</NavLink>
+              <NavLink to="/service">SERVICE</NavLink>
             </li>
             <li>
-              <NavLink to="/contact">Contact Us</NavLink>
+              <NavLink to="/contact">CONTACT US</NavLink>
             </li>
           </ul>
         </div>
 
         {/* 3rd social media links */}
-        <div className="social-media">
-          <ul className="social-media-desktop">
-            <li>
-              <a href="/" target="_thapa">
-                <FaFacebookSquare className="facebook" />
-              </a>
-            </li>
-            <li>
-              <a href="/" target="_thapa">
-                <FaInstagramSquare className="instagram" />
-              </a>
-            </li>
-            <li>
-              <a href="/" target="_thapa">
-                <FaYoutubeSquare className="youtube" />
-              </a>
-            </li>
-          </ul>
-
-          {/* hamburget menu start  */}
-          {/* <div className="hamburger-menu">
-            <a href="#" onClick={() => setShowMediaIcons(!showMediaIcons)}>
-              <GiHamburgerMenu />
-            </a>
-          </div> */}
+        <div className="button">
+          <NavLink to="/service">LOGIN/SIGN UP</NavLink>
         </div>
       </nav>
 

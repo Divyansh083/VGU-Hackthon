@@ -8,7 +8,7 @@ import Footer from "./component/Footer";
 import LandingPage from "./component/landing";
 import CompanyPage from "./component/company";
 import FarmerPage from "./component/farmer";
-import BestPractices from "./BestPractices";
+import BestPractices from "./component/BestPractices";
 
 function App() {
   return (

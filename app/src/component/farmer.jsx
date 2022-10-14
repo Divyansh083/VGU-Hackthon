@@ -30,12 +30,15 @@ $.ajax({
         var b = document.getElementById("temp");
         var c = document.getElementById("humidity");
         var d = document.getElementById("city");
-        a.innerHTML = dataArray.weather[0].main;
-        b.innerHTML = dataArray.main.temp+"°C";
-        c.innerHTML = dataArray.main.humidity+"%";
-        d.innerHTML = dataArray.name;
-        const date = new Date();
-        document.getElementById("date").innerHTML = date.toDateString();
+        window.onload = () => {
+            a.innerHTML = dataArray.weather[0].main;
+            b.innerHTML = dataArray.main.temp+"°C";
+            c.innerHTML = dataArray.main.humidity+"%";
+            d.innerHTML = dataArray.name;
+            const date = new Date();
+            var e = document.getElementById("date");
+            e.innerHTML = date.toDateString();
+        }
     },
 });
 /* Object { coord: {…}, weather: (1) […], base: "stations", main: {…}, visibility: 5000, wind: {…}, clouds: {…}, dt: 1665730473, sys: {…}, timezone: 19800, … }
@@ -97,7 +100,7 @@ const FarmerPage = () => {
                             </tr>
                             <tr>
                                 <td id="humidity">Calculating</td>
-                                <td id="temp"></td>
+                                <td id="temp">Calculating</td>
                                 <td id="weather">Calculating</td>
                             </tr>
                         </table>

@@ -41,6 +41,7 @@ li {
   grid-column: 2/3;
   justify-content: start;
   align-items: center;
+  padding-bottom: 40px;
 }
 
 .menu-link {
@@ -52,6 +53,7 @@ li {
   display: flex;
   justify-content: space-around;
   align-items: center;
+  padding-bottom: 40px;
 }
 
 .social-media {
@@ -64,6 +66,7 @@ li {
   grid-template-columns: 3fr repeat(3, 1fr);
   align-items: center;
   justify-content: flex-end;
+  padding-bottom: 40px;
 }
 
 .social-media ul li {
@@ -101,28 +104,12 @@ li {
 .menu-link ul li:hover > a {
   transform-origin: left;
   color: rgba(0, 0, 3, 1);
-  text-decoration: underline;
+  /* text-decoration: underline; */
   transition: 0.5s;
 }
 
 .social-media ul li {
   font-size: 1.8rem;
-}
-
-.social-media .hamburger-menu {
-  display: none;
-}
-
-.facebook {
-  color: #3b5998;
-}
-
-.instagram {
-  color: #c32aa3;
-}
-
-.youtube {
-  color: #ff0000;
 }
 
 /* hero section   */
@@ -289,4 +276,29 @@ li {
   .hero-section h1 {
     font-size: 3.8rem;
   }
+}
+
+.login{
+  padding-bottom: 40px;
+  height: 10rem;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding-bottom: 40px;
+  font-size: 18px;
+}
+
+.button {
+  border: none;
+  color: blueviolet;
+  padding: 24px 22px 55px 67px;
+  font-weight: bolder;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 18px;
+}
+
+.button navlink:link{
+  text-decoration: none;
 }

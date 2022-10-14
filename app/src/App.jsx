@@ -18,12 +18,8 @@ function App() {
         <Route path="/" element={<LandingPage/>}/>
         <Route path="/contact" element={<Contact />} />
         <Route path="/buyerdashboard" element={<BuyerDashboard/>}/>
-<<<<<<< HEAD
-        <Route path="/bestpractices" element={<BestPractices/>}></Route>
-=======
         <Route path="/company" element={<CompanyPage/>}/>
         <Route path="/farmer" element={<FarmerPage/>}/>
->>>>>>> 900f4e32d032e661bc20f6b563db6e47799a560f
       </Routes>
       <Footer/>
     </div>

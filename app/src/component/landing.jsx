@@ -17,7 +17,7 @@ const LandingPage = () => {
                     The portal provides large companies with all the information
                     about the crops including sowing techniques and all the
                     activities from pre harvesting to harvesting. <br />
-                    It provides famrers with weather alerts and guides them with
+                    It provides farmers with weather alerts and guides them with
                     the suitable crop ,best practices and pest control
                     techniques.
                   </p>
@@ -28,21 +28,20 @@ const LandingPage = () => {
             <div class="col-xl-8 col-lg-8 col-md-12 padding_right">
               <div class="banner_main_img">
                 <figure>
-                  <img src="images/our_img1.jpg" alt="#" />
-                  <h3>FARMING COMPANY</h3>
+                  <img src={require("../images/our_img1.jpg")}alt="#" style={{height:"400px", borderRadius:"10px"}}/>
                 </figure>
               </div>
             </div>
           </div>
         </div>
       </section>
-      <div id="about" class="about">
+      <div id="about" class="about" style={{paddingTop:"20px"}}>
         <div class="container-fluid">
           <div class="row d_flex">
             <div class="col-xl-7 col-lg-7 col-md-12 padding_lert">
               <div class="about_img">
                 <figure>
-                  <img src="images/about_img.jpg" alt="#" />
+                <img src={require("../images/about_img.jpg")}alt="#" style={{height:"400px", borderRadius:"10px"}}/>
                 </figure>
               </div>
             </div>
@@ -67,7 +66,7 @@ const LandingPage = () => {
           </div>
         </div>
       </div>
-      <div id="our" class="our">
+      <div id="our" class="our" style={{paddingTop:"20px"}}>
         <div class="container-fluid">
           <div class="row d_flex">
             <div class="col-xl-5 col-lg-5 col-md-12 order_2">
@@ -88,8 +87,8 @@ const LandingPage = () => {
             </div>
             <div class="col-xl-7 col-lg-7 col-md-12 padding_right order_1">
               <div class="our_img">
-                <figure>
-                  <img src="images/our_img.jpg" alt="#" />
+                <figure id="img1" style={{float: "right"}}>
+                <img src={require("../images/our_img.jpg")}alt="#" style={{height:"400px", borderRadius:"10px", }}/>
                 </figure>
               </div>
             </div>
@@ -97,7 +96,7 @@ const LandingPage = () => {
         </div>
       </div>
       <footer>
-        <div class="footer">
+        <div class="footer" style={{padding:"20px"}}>
           <div class="container">
             <div class="row">
               <div class="col-md-12">
@@ -114,18 +113,7 @@ const LandingPage = () => {
               </div>
             </div>
           </div>
-          <div class="copyright">
-            <div class="container">
-              <div class="row">
-                <div class="col-md-12">
-                  <p>
-                    Copyright 2019 All Right Reserved By{" "}
-                    <a href="https://html.design/"> Free html Templates</a>
-                  </p>
-                </div>
-              </div>
-            </div>
-          </div>
+          
         </div>
       </footer>
     </>

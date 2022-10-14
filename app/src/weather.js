@@ -15,9 +15,9 @@ function showPosition(position) {
     long = position.coords.longitude;
     console.log(lat,long)
 }
-var URL = "https://api.openweathermap.org/data/2.5/weather?lat="+lat+"&lon="+long+"&appid="+KEY;
+var URL = "https://api.openweathermap.org/data/2.5/weather?lat="+lat+"&lon="+long+"&appid=02823c704385be331f682e77eabacece";
 var request = $.ajax({
-  url: "http://api.openweathermap.org/data/2.5/weather",
+  url: "https://api.openweathermap.org/data/2.5/weather?lat="+lat+"&lon="+long+"&appid=02823c704385be331f682e77eabacece",
   method: "GET",
   data: { id : '2172797', appid: '02823c704385be331f682e77eabacece'},
   success: function(response) {

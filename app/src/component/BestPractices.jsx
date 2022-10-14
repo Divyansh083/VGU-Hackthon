@@ -1,13 +1,15 @@
 import React from "react";
 import "bootstrap/dist/css/bootstrap.min.css";
-import "./component/style.css";
+import "./style.css";
+import PestPage from "./pest";
 import Collapsible from "react-collapsible";
 
 const BestPractices = () => {
   return (
     <>
     <div><h1><b>Best Practices</b></h1></div>
-    <div class="col-lg-6 info collapsible">
+    <PestPage/>
+    <div className="col-lg-6 info collapsible">
       <Collapsible trigger="Soil preparation">
         <p>
           The most important aspect in agricultural process is to loosen the

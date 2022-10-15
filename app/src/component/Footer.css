@@ -2,8 +2,11 @@
   color: white;
   background-color: #dc3545;
   padding-top: 3em;
-  position: relative;
-  bottom: 0;
+  position:relative;
+  padding-bottom: 0em;
   width: 100%;
   border-radius: 25px;
+  margin: 0;
+
+
 }

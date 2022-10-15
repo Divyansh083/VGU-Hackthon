@@ -2,41 +2,49 @@ import React from "react";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "./style.css";
 import $ from "jquery";
+import Footer from "./Footer";
 
 var lat = 26.811,
-    long = 75.889;
+  long = 75.889;
 var x = document.getElementById("test");
 if (navigator.geolocation) {
-    navigator.geolocation.getCurrentPosition(showPosition);
+  navigator.geolocation.getCurrentPosition(showPosition);
 } else {
-    x.innerHTML = "Geolocation is not supported by this browser.";
+  x.innerHTML = "Geolocation is not supported by this browser.";
 }
 
 function showPosition(position) {
-    lat = position.coords.latitude;
-    long = position.coords.longitude;
-    console.log(lat, long);
+  lat = position.coords.latitude;
+  long = position.coords.longitude;
+  console.log(lat, long);
 }
 
 $.ajax({
-    url: "https://api.openweathermap.org/data/2.5/weather?lat="+lat+"&lon="+long+"&appid=02823c704385be331f682e77eabacece&units=metric",
-    method: "GET",
-    data: { id: "2172797", appid: "02823c704385be331f682e77eabacece" },
-    success: function (response) {
-        // response from OpenWeatherMap
-        let dataArray = JSON.parse(JSON.stringify(response)); // create an array from JSON element
-        console.log(dataArray);
-        var a = document.getElementById("weather");
-        var b = document.getElementById("temp");
-        var c = document.getElementById("humidity");
-        var d = document.getElementById("city");
-        a.innerHTML = dataArray.weather[0].main;
-        b.innerHTML = dataArray.main.temp+"°C";
-        c.innerHTML = dataArray.main.humidity+"%";
-        d.innerHTML = dataArray.name;
-        const date = new Date();
-        document.getElementById("date").innerHTML = date.toDateString();
-    },
+  url:
+    "https://api.openweathermap.org/data/2.5/weather?lat=" +
+    lat +
+    "&lon=" +
+    long +
+    "&appid=02823c704385be331f682e77eabacece&units=metric",
+  method: "GET",
+  data: { id: "2172797", appid: "02823c704385be331f682e77eabacece" },
+  success: function (response) {
+    // response from OpenWeatherMap
+    let dataArray = JSON.parse(JSON.stringify(response)); // create an array from JSON element
+    console.log(dataArray);
+    window.onload = () => {
+      var a = document.getElementById("weather");
+      var b = document.getElementById("temp");
+      var c = document.getElementById("humidity");
+      var d = document.getElementById("city");
+      a.innerHTML = dataArray.weather[0].main;
+      b.innerHTML = dataArray.main.temp + "°C";
+      c.innerHTML = dataArray.main.humidity + "%";
+      d.innerHTML = dataArray.name;
+      const date = new Date();
+      document.getElementById("date").innerHTML = date.toDateString();
+    };
+  },
 });
 /* Object { coord: {…}, weather: (1) […], base: "stations", main: {…}, visibility: 5000, wind: {…}, clouds: {…}, dt: 1665730473, sys: {…}, timezone: 19800, … }
 base: "stations"​
@@ -84,7 +92,7 @@ const FarmerPage = () => {
     <>
       <div className="container fluid">
         <br />
-        <div className="row" style={{float:"right"}}>
+        <div className="row" style={{ float: "right" }}>
           {/* <div className="col-lg-6 img-fluid">
                 <img src="images.jpg" alt="">
             </div> */}
@@ -109,7 +117,7 @@ const FarmerPage = () => {
         <br />
         <br />
         <br />
-        
+
         <h1 className=" head text-center">Suggested Crops</h1>
 
         <div
@@ -117,8 +125,6 @@ const FarmerPage = () => {
           className="carousel slide carousel-dark text-center"
           data-mdb-ride="carousel"
         >
-
-
           <div className="carousel-inner py-4">
             <div className="carousel-item active">
               <div className="container">
@@ -390,6 +396,7 @@ const FarmerPage = () => {
           </div>
         </div>
       </div>
+      <Footer/>
     </>
   );
 };

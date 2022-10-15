@@ -1,16 +1,15 @@
 import React from "react";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "./style.css";
-import PestPage from "./pest";
 import Collapsible from "react-collapsible";
+import Footer from "./Footer";
 
 const BestPractices = () => {
   return (
     <>
     <div><h1><b>Best Practices</b></h1></div>
-    <PestPage/>
     <div className="col-lg-6 info collapsible">
-      <Collapsible trigger="Soil preparation">
+      <Collapsible trigger=<b>Soil preparation</b>>
         <p>
           The most important aspect in agricultural process is to loosen the
           topsoil. The loosened soil helps in the growth of earthworm and soil
@@ -77,7 +76,7 @@ const BestPractices = () => {
         </p>
       </Collapsible>
 
-      <Collapsible trigger="Sowing of seeds">
+      <Collapsible trigger=<b>Sowing of seeds</b>>
         <p>
           This is the second step in crop production. Once the soil preparation
           is over, sowing of the seeds can be done. Sowing is the actual process
@@ -120,7 +119,7 @@ const BestPractices = () => {
         />
       </Collapsible>
 
-      <Collapsible trigger="Soil preparation">
+      <Collapsible trigger=<b>Soil preparation</b>>
         <p>
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus
           autem optio assumenda sapiente illo facere corrupti, molestiae
@@ -135,7 +134,7 @@ const BestPractices = () => {
         </p>
       </Collapsible>
 
-      <Collapsible trigger="Irrigation">
+      <Collapsible trigger=<b>Irrigation</b>>
       <p>
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus
           autem optio assumenda sapiente illo facere corrupti, molestiae
@@ -150,7 +149,7 @@ const BestPractices = () => {
         </p>
       </Collapsible>
 
-      <Collapsible trigger="Weeding">
+      <Collapsible trigger=<b>Weeding</b>>
       <p>
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus
           autem optio assumenda sapiente illo facere corrupti, molestiae
@@ -164,7 +163,7 @@ const BestPractices = () => {
           id, ducimus error! Eligendi!
         </p>
       </Collapsible>
-      <Collapsible trigger="Harvesting of food crops">
+      <Collapsible trigger=<b>Harvesting of food crops</b>>
       <p>
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus
           autem optio assumenda sapiente illo facere corrupti, molestiae
@@ -178,7 +177,7 @@ const BestPractices = () => {
           id, ducimus error! Eligendi!
         </p>
       </Collapsible>
-      <Collapsible trigger="Storage of food grains">
+      <Collapsible trigger=<b>Storage of food grains</b>>
       <p>
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus
           autem optio assumenda sapiente illo facere corrupti, molestiae
@@ -193,6 +192,7 @@ const BestPractices = () => {
         </p>
         </Collapsible>
     </div>
+    <Footer/>
     </>
   );
 };

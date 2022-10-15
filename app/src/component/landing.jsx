@@ -1,6 +1,8 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import "bootstrap/dist/css/bootstrap.min.css";
+import Footer from "./Footer";
+
 // import pic1 from ".about_img.jpg"
 
 const LandingPage = () => {
@@ -116,6 +118,7 @@ const LandingPage = () => {
           
         </div>
       </footer>
+      <Footer/>
     </>
   );
 };

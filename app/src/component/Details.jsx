@@ -18,93 +18,54 @@ function Details() {
         <Accordion defaultActiveKey="0">
 
           <Accordion.Item eventKey="0">
-            <Accordion.Header>First Accordion</Accordion.Header>
+            <Accordion.Header>Introduction</Accordion.Header>
             <Accordion.Body>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
-              enim ad minim veniam, quis nostrud exercitation ullamco laboris
-              nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in
-              reprehenderit in voluptate velit esse cillum dolore eu fugiat
-              nulla pariatur. Excepteur sint occaecat cupidatat non proident,
-              sunt in culpa qui officia deserunt mollit anim id est laborum.
+            Date palm is oldest tree cultivation on earth.They are excellent source of calcium, sugar, iron and potassium. They are used in many social and religious festivals. Also they have many health benefits like relive constipation, reduce heart disease, control diarrhea and help in pregnancy. <br />
+        Date cultivation is mainly concentrated in Arabic countries, Irasel and Africa. Iran is major producer and exporter of dates. From last decades Indian Government take lot of effort and increased area under date plam cultivation.
             </Accordion.Body>
           </Accordion.Item>
 
           <Accordion.Item eventKey="1">
-            <Accordion.Header>Second Accordion</Accordion.Header>
+            <Accordion.Header>Climate</Accordion.Header>
             <Accordion.Body>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
-              enim ad minim veniam, quis nostrud exercitation ullamco laboris
-              nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in
-              reprehenderit in voluptate velit esse cillum dolore eu fugiat
-              nulla pariatur. Excepteur sint occaecat cupidatat non proident,
-              sunt in culpa qui officia deserunt mollit anim id est laborum.
+            Date requires low relative humidity and plenty of sunshine for their best growth. <br />
+            It requires long days with plenty of sunshine, night temperatures and winter days without frost.
+            It does not prefer rain especially at the time of flowering and fruit setting.
             </Accordion.Body>
           </Accordion.Item>
 
           <Accordion.Item eventKey="2">
-            <Accordion.Header>Third Accordion</Accordion.Header>
+            <Accordion.Header>Soil</Accordion.Header>
             <Accordion.Body>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
-              enim ad minim veniam, quis nostrud exercitation ullamco laboris
-              nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in
-              reprehenderit in voluptate velit esse cillum dolore eu fugiat
-              nulla pariatur. Excepteur sint occaecat cupidatat non proident,
-              sunt in culpa qui officia deserunt mollit anim id est laborum.
+            Dates require welldrained deep sandy loam soils with pH of 8.0 to 10.0. The soil should have ability to hold the moisture. <br /> The dates also can be grown in saline and alkaline soils with lower yield. <br /> The soil should be free from calcium carbonate and should not have any hard pan at least up to 2.5 meter for better root development.
             </Accordion.Body>
           </Accordion.Item>
 
           <Accordion.Item eventKey="3">
-            <Accordion.Header>Third Accordion</Accordion.Header>
+            <Accordion.Header>Irrigation</Accordion.Header>
             <Accordion.Body>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
-              enim ad minim veniam, quis nostrud exercitation ullamco laboris
-              nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in
-              reprehenderit in voluptate velit esse cillum dolore eu fugiat
-              nulla pariatur. Excepteur sint occaecat cupidatat non proident,
-              sunt in culpa qui officia deserunt mollit anim id est laborum.
+            In summers, irrigation is given at the interval of 10-15 days and in winters irrigation is given at the interval of 30-40 days. <br /> Prior irrigation is necessary after spathe emergence. After fruit set irrigation is given at regular intervals
             </Accordion.Body>
           </Accordion.Item>
 
           <Accordion.Item eventKey="4">
-            <Accordion.Header>Third Accordion</Accordion.Header>
+            <Accordion.Header>Pre-harvesting</Accordion.Header>
             <Accordion.Body>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
-              enim ad minim veniam, quis nostrud exercitation ullamco laboris
-              nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in
-              reprehenderit in voluptate velit esse cillum dolore eu fugiat
-              nulla pariatur. Excepteur sint occaecat cupidatat non proident,
-              sunt in culpa qui officia deserunt mollit anim id est laborum.
+            For first harvesting, 4 to 5 years are required. In between vegetables like gaur, gum, rise, chilly, peas, brinjal etc. can be taken as intercrop. 
             </Accordion.Body>
           </Accordion.Item>
 
           <Accordion.Item eventKey="5">
-            <Accordion.Header>Third Accordion</Accordion.Header>
+            <Accordion.Header>Harvesting</Accordion.Header>
             <Accordion.Body>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
-              enim ad minim veniam, quis nostrud exercitation ullamco laboris
-              nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in
-              reprehenderit in voluptate velit esse cillum dolore eu fugiat
-              nulla pariatur. Excepteur sint occaecat cupidatat non proident,
-              sunt in culpa qui officia deserunt mollit anim id est laborum.
+            Four to five year after plantation, date palm tree are ready for first harvest. Fruits are harvested at three stages, khalal or doka stage(fresh fruits), soft or ripen stage (pind or tamar) and dry stage (chuhhara). Complete harvesting before start of monsoon season.
             </Accordion.Body>
           </Accordion.Item>
 
           <Accordion.Item eventKey="6">
-            <Accordion.Header>Third Accordion</Accordion.Header>
+            <Accordion.Header>Weed Control</Accordion.Header>
             <Accordion.Body>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
-              enim ad minim veniam, quis nostrud exercitation ullamco laboris
-              nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in
-              reprehenderit in voluptate velit esse cillum dolore eu fugiat
-              nulla pariatur. Excepteur sint occaecat cupidatat non proident,
-              sunt in culpa qui officia deserunt mollit anim id est laborum.
+            Keep field clean and free from weeds. Take weeding or hoeing operations depending upon intensity of weeds. Use mulch for weed control.
             </Accordion.Body>
           </Accordion.Item>
 

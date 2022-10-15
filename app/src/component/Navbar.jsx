@@ -17,8 +17,8 @@ const Navbar = () => {
         {/* 1st logo part  */}
         <div className="logo">
           <h2>
-            <span>K</span>isaan
-            <span>R</span>ozgar
+            <span>A</span>gro
+            <span>H</span>elp
           </h2>
         </div>
 
@@ -38,7 +38,7 @@ const Navbar = () => {
               <NavLink to="/about">ABOUT</NavLink>
             </li>
             <li>
-              <NavLink to="/service">SERVICE</NavLink>
+              <NavLink to="/buyerdashboard">ITEMS</NavLink>
             </li>
             <li>
               <NavLink to="/contact">CONTACT US</NavLink>

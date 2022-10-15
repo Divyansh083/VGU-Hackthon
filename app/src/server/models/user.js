@@ -44,6 +44,8 @@ let userSchema = new mongoose.Schema({
     usertype: {
         type: String,
         trim: true,
+        enum: ["indi", "org"],
+        default: "indi",
         required: true,
     },
 
@@ -70,8 +72,8 @@ let userSchema = new mongoose.Schema({
 
     status: {
         type: String,
-        enum: ["no", "yes"],
-        default: "yes",
+        enum: ["active", "pending"],
+        default: "pending",
     },
 
     confirmationCode: {

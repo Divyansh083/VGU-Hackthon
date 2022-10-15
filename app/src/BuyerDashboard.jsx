@@ -2,12 +2,13 @@ import React, { useState } from "react";
 import "./buyer_dashboard.css";
 import { Link } from "react-router-dom";
 import axios from "axios";
-import Navbar from "./component/Navbar";
-import Button from "react-bootstrap/Button";
+
+
 import Footer from "./component/Footer";
 
 import Card from "react-bootstrap/Card";
 import Col from "react-bootstrap/Col";
+import Button from "react-bootstrap/Button";
 import Row from "react-bootstrap/Row";
 
 function BuyerDashboard() {
@@ -90,27 +91,30 @@ function BuyerDashboard() {
               </div>
             </div>
             <div class="col-md-8">
-            <Row xs={1} lg={4} className="g-4">
-              {Array.from({ length: 9 }).map((_, idx) => (
-                <Col>
-                  <Card>
-                    <Card.Img variant="top" src="https://tse1.mm.bing.net/th?id=OIP.MaRera5xQXBNg4FjFMzgqAHaE1&pid=Api&P=0" />
-                    <Card.Body>
-                      <Card.Title>Card title</Card.Title>
-                      <Card.Text>
-                        This is a longer card with supporting text below as a
-                        natural lead-in to additional content. This content is a
-                        little bit longer.
-                      </Card.Text>
-                    </Card.Body>
-                  </Card>
-                </Col>
-              ))}
-            </Row>
-
+              <Row xs={1} lg={4} className="g-4">
+                {Array.from({ length: 5 }).map((_, idx) => (
+                  <Col>
+                    <Card>
+                      <Card.Img
+                        variant="top"
+                        src="https://tse1.mm.bing.net/th?id=OIP.MaRera5xQXBNg4FjFMzgqAHaE1&pid=Api&P=0"
+                      />
+                      <Card.Body>
+                        <Card.Title>Card title</Card.Title>
+                        <Card.Text>
+                          This is a longer card with supporting text below as a
+                          natural lead-in to additional content. This content is
+                          a little bit longer.
+                        </Card.Text> <br />
+                        <a href="Company" target="_blank">
+                          <Button> Show More </Button>
+                        </a>
+                      </Card.Body>
+                    </Card>
+                  </Col>
+                ))}
+              </Row>
             </div>
-
-
           </div>
         </div>
       </div>

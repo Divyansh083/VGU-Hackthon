@@ -11,6 +11,7 @@ import FarmerPage from "./component/farmer";
 import BestPractices from "./component/BestPractices";
 import Login from "./component/Login";
 import Signup from "./component/Signup";
+import Details from "./component/Details";
 
 function App() {
   return (
@@ -25,6 +26,7 @@ function App() {
         <Route path="/bestpractices" element={<BestPractices/>}/>
         <Route path="/login" element={<Login />} />
         <Route path="/signup" element={<Signup />} />
+        <Route path="/details" element={<Details />}/>
       </Routes>
 
     </div>

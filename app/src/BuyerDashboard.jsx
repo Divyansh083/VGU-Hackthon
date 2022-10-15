@@ -91,21 +91,29 @@ function BuyerDashboard() {
               </div>
             </div>
             <div class="col-md-8">
+              <h1>
+                <b>Details about agricultural activities</b>
+              </h1>
+              <br />
               <Row xs={1} lg={4} className="g-4">
                 {Array.from({ length: 5 }).map((_, idx) => (
                   <Col>
                     <Card>
                       <Card.Img
                         variant="top"
-                        src="https://tse1.mm.bing.net/th?id=OIP.MaRera5xQXBNg4FjFMzgqAHaE1&pid=Api&P=0"
+                        src="https://tse3.mm.bing.net/th?id=OIP.1toJuITfsbeT5rNNZhRFGwHaFP&pid=Api&P=0"
                       />
                       <Card.Body>
-                        <Card.Title>Card title</Card.Title>
+                        <Card.Title>Date Palm</Card.Title>
                         <Card.Text>
-                          This is a longer card with supporting text below as a
-                          natural lead-in to additional content. This content is
-                          a little bit longer.
-                        </Card.Text> <br />
+                          A date fruit is the product of a date palm, a tree
+                          native to Northern Africa and the Middle East,
+                          although it is also cultivated in other parts of the
+                          world. In addition to being eaten fresh, the date
+                          fruit is dried and eaten whole as a snack or included
+                          in an assortment of desserts.
+                        </Card.Text>{" "}
+                        <br />
                         <a href="Details" target="_blank">
                           <Button> Show More </Button>
                         </a>

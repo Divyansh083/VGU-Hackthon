@@ -12,6 +12,8 @@ import BestPractices from "./component/BestPractices";
 import Login from "./component/Login";
 import Signup from "./component/Signup";
 import Details from "./component/Details";
+import PestPage from "./component/pest";
+import MarketPlace from "./component/MarketPlace";
 
 function App() {
   return (
@@ -27,6 +29,8 @@ function App() {
         <Route path="/login" element={<Login />} />
         <Route path="/signup" element={<Signup />} />
         <Route path="/details" element={<Details />}/>
+        <Route path="/pest" element={<PestPage />} />
+        <Route path="/market" element={<MarketPlace />} />
       </Routes>
       {/* <Footer/> */}
     </div>

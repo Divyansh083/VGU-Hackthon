@@ -8,7 +8,7 @@ function Footer() {
         <div className="row">
           {/* Column1 */}
           <div className="col">
-            <h4>KISHAAN ROZGAR INC</h4>
+            <h4>KISAAN ROZGAR INC</h4>
             <ui className="list-unstyled">
               <li>+91-123456789</li>
               <li>HARYANA,INDIA</li>

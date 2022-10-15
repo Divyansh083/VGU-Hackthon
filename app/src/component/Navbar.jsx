@@ -48,7 +48,7 @@ const Navbar = () => {
 
         {/* 3rd social media links */}
         <div className="button">
-          <NavLink to="/service">LOGIN/SIGN UP</NavLink>
+          <NavLink to="/login">LOGIN/SIGN UP</NavLink>
         </div>
       </nav>
 

@@ -1,0 +1,137 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+.signupPage .container {
+    position: relative;
+    max-width: 430px;
+    width: 100%;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.5);
+    border-radius: 10px;
+    margin-top: 20px;
+    margin-bottom: 50px;
+}
+.signupPage .container .form {
+    width: 100%;
+    height: 550px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.signupPage .container .form .title {
+    position: relative;
+    font-size: 2rem;
+}
+.signupPage .signup {
+    margin-top: 0px;
+}
+
+.signupPage #reg-form {
+    width: 340px;
+    margin-top: -15px;
+}
+.signupPage .form .input-field {
+    position: relative;
+    height: 50px;
+    width: 100%;
+    margin-top: 20px;
+}
+.signupPage .input-field input {
+    height: 100%;
+    width: 100%;
+    font-size: 1rem;
+    border: none;
+    outline: none;
+    border-bottom: 1px solid #40514e;
+    border-top: 2px solid transparent;
+}
+.signupPage .container.form.login-form {
+    width: 200px;
+}
+.signupPage .input-field i.icon {
+    left: 0;
+}
+.signupPage .input-field i.showHidePw {
+    right: 0;
+    cursor: pointer;
+    padding: 10px;
+}
+.signupPage .form .checkbox-text {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 20px;
+}
+.signupPage .checkbox-text .checkbox-content {
+    display: flex;
+    align-items: center;
+}
+.signupPage .checkbox-content input {
+    margin: 0 8px -2px 4px;
+    accent-color: var(--primary);
+}
+.signupPage .from .text {
+    color: var(--primary);
+    font-size: 0.875rem;
+}
+.signupPage .form a.text {
+    color: #dc3545;
+    text-decoration: none;
+}
+.signupPage .button {
+    background-color: #dc3545;
+}
+.signupPage .signup_button {
+    font-size: 20px;
+    color: white;
+    padding-top: 10px;
+}
+.signupPage .button:hover {
+    background-color: #40514e;
+    cursor: pointer;
+}
+.signupPage .form a:hover {
+    text-decoration: underline;
+}
+.signupPage .form .button {
+    margin-top: 35px;
+    color: #40514e;
+}
+.signupPage .form .button input {
+    border: none;
+    font-size: 1rem;
+    letter-spacing: 1px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.signupPage .login-signup {
+    margin-top: 30px;
+    text-align: center;
+}
+.signupPage .select_role {
+    font-size: 13px;
+    padding: 10px 8px 10px 0px;
+    background: #fff;
+    border-bottom: 1px solid black;
+    overflow: hidden;
+    position: relative;
+}
+
+.signupPage .select_role .select {
+    width: 100%;
+    background-position: 80% center;
+}
+
+.signupPage .select_role .select select {
+    background: transparent;
+    line-height: 1;
+    padding: 0;
+    border: none;
+    width: 100%;
+    position: relative;
+    z-index: 10;
+    font-size: 1em;
+}

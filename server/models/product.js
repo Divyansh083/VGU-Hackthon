@@ -36,10 +36,10 @@ const productSchema = new mongoose.Schema({
         trim: true,
     },
 
-    favourable_envi: {
+    favourable_envi: [{
         type: String,
         trim: true,
-    },
+    }],
     unfavourable_envi: [{
         type: String,
         trim: true,

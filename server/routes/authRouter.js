@@ -146,7 +146,7 @@ authRouter.get("/confirmMail/:confirmationCode", async (req, res) => {
             <strong>Account confirmed!</strong>
           </h3>
         </header>
-        <a href="http://localhost:6060/login">
+        <a href="http://localhost:3000/login">
           Please Login
         </a>
       </div>`);

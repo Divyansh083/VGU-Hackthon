@@ -4,8 +4,8 @@ const authRouter = express.Router();
 const User = require("../models/user.js");
 const bcryptjs = require("bcryptjs");
 const jwt = require("jsonwebtoken");
-const nodemailer = require("../utils/nodemailer.config.js");
-const auth = require("../middlewares/user");
+const nodemailer = require("../nodemailer.config.js");
+const auth = require("../middleware/user");
 const { jwtTokenKey } = require("../config");
 
 authRouter.post("/user/forgotpassword", async (req, res) => {
@@ -97,9 +97,7 @@ authRouter.post("/user/signup", async (req, res) => {
         const isUserAlreadyExists = await User.findOne({ useremail: email });
 
         if (isUserAlreadyExists) {
-            return res
-                .status(400)
-                .json({ message: "Email in use" });
+            return res.status(400).json({ message: "Email in use" });
         }
 
         const hashedPassword = (await bcryptjs.hash(password, 8)).toString();
@@ -218,14 +216,13 @@ authRouter.get("/tokenIsValid", async (req, res) => {
         const user = await User.findById(verified.id);
         if (!user) return res.json(false);
 
-        if (user.status != "active") return res.json(false);
+        if (user.status !== "active") return res.json(false);
 
         return res.json(true);
     } catch (e) {
         console.log("inside catch");
         res.status(500).json({ error: e.message });
     }
-    ;
 });
 
 authRouter.get("/home", auth, async (req, res) => {

@@ -44,6 +44,8 @@ let userSchema = new mongoose.Schema({
     usertype: {
         type: String,
         trim: true,
+        enum: ["indi", "org"],
+        default: "indi",
         required: true,
     },
 

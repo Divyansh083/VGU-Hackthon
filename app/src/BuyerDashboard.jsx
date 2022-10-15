@@ -3,6 +3,7 @@ import "./buyer_dashboard.css";
 import { Link } from "react-router-dom";
 import axios from "axios";
 import Navbar from "./component/Navbar";
+import Footer from "./component/Footer";
 
 function BuyerDashboard() {
   Navbar();
@@ -61,17 +62,17 @@ function BuyerDashboard() {
     }
   };
 
-  const searchProduct = async(pname) => {
-    try{
+  const searchProduct = async (pname) => {
+    try {
       const url = "/api/products/search/:name";
-      const res = await axios.get(url, {name: pname}).then((response) => {
+      const res = await axios.get(url, { name: pname }).then((response) => {
         console.log(response);
         alert("Searching results");
       });
-    }catch(error){
+    } catch (error) {
       console.log(error);
     }
-  }
+  };
 
   return (
     <>
@@ -278,7 +279,10 @@ function BuyerDashboard() {
                       type="text"
                       placeholder="what do you need?"
                     />
-                    <div className="btn btn-primary d-flex align-items-center justify-content-center" onClick={()=>searchProduct()}>
+                    <div
+                      className="btn btn-primary d-flex align-items-center justify-content-center"
+                      onClick={() => searchProduct()}
+                    >
                       {" "}
                       SEARCH
                     </div>
@@ -304,10 +308,7 @@ function BuyerDashboard() {
 
                 <div className="cart-logo" style={{ width: "100px" }}>
                   <Link to="/cart">
-                    <img
-                      className="logo logo_light_bg"
-                      alt="cart logo"
-                    />
+                    <img className="logo logo_light_bg" alt="cart logo" />
                   </Link>
                 </div>
               </div>
@@ -343,24 +344,21 @@ function BuyerDashboard() {
                           alt="soap"
                         /> */}
 
-                        {c>=16?(
-                         <img
-                          src=
-                              "https://www.ynotpics.com/wp-content/uploads/2017/06/lavender-flower.jpg"
-                          
-                          className="card-img-top product-image"
-                          alt="soap"
-                        /> 
-                        ):(
+                        {c >= 16 ? (
                           <img
-                        /*   src={
+                            src="https://www.ynotpics.com/wp-content/uploads/2017/06/lavender-flower.jpg"
+                            className="card-img-top product-image"
+                            alt="soap"
+                          />
+                        ) : (
+                          <img
+                            /*   src={
                                p.product_images[0]
                           } */
-                          className="card-img-top product-image"
-                          alt="soap"
-                        /> 
+                            className="card-img-top product-image"
+                            alt="soap"
+                          />
                         )}
-
 
                         {/* <img
                           src={
@@ -416,9 +414,9 @@ function BuyerDashboard() {
           </div>
         </div>
       </div>
+      <Footer/>
     </>
   );
- c++;
 }
 
 export default BuyerDashboard;

@@ -1,0 +1,107 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+.login .container{
+    position: relative;
+    max-width: 430px;
+    width: 100%;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.5);
+    border-radius: 10px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+.login .container .form1{
+    height: 440px; /*comment for only login form1*/
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.login .container .form1 .title{
+    position: relative;
+    font-size: 2rem;
+}
+
+
+.login .form1 .input-field{
+    position: relative;
+    height: 50px;
+    width: 100%;
+    margin-top: 30px;
+}
+.login .input-field input{
+    height: 100%;
+    width: 100%;
+    font-size: 1rem;
+    border: none;
+    outline: none;
+    border-bottom: 1px solid #40514E;
+    border-top: 2px solid transparent;
+}
+.login .container.form1.login-form{
+    width: 200px;
+}
+.login .input-field i.icon{
+    left: 0;
+}
+.login .input-field i.showHidePw{
+    right: 0;
+    cursor: pointer;
+    padding: 10px;
+}
+.login .form1 .checkbox-text{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 20px;
+}
+.login .checkbox-text .checkbox-content{
+    display: flex;
+    align-items: center;
+}
+.login .checkbox-content input{
+    margin: 0 8px -2px 4px;;
+    accent-color: #dc3545;
+}
+.login .from .text{
+    color: var(--primary);
+    font-size: 0.875rem;
+}
+.login .form1 a.text{
+    color: #8f222d;
+    text-decoration: none;
+}
+.login .button{
+    background-color:#8f222d;
+}
+.login .login_button{
+    font-size: 20px;
+    color: white;
+    padding-top: 10px;
+}
+.login .button:hover{
+    background-color:#40514E;
+    cursor: pointer;
+}
+.login .form1 a:hover{
+    text-decoration: underline;
+}
+.login .form1 .button{
+    margin-top: 35px;
+    color: #40514E;
+}
+.login .form1 .button input{
+    border: none;
+    font-size: 1rem;
+    letter-spacing: 1px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.login .login-signup{
+    margin-top: 30px;
+    text-align: center;
+}

@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import "./buyer_dashboard.css";
 import { Link } from "react-router-dom";
 import axios from "axios";
-
+import Navbar from "./component/Navbar";
 
 import Footer from "./component/Footer";
 
@@ -106,7 +106,7 @@ function BuyerDashboard() {
                           natural lead-in to additional content. This content is
                           a little bit longer.
                         </Card.Text> <br />
-                        <a href="Company" target="_blank">
+                        <a href="Details" target="_blank">
                           <Button> Show More </Button>
                         </a>
                       </Card.Body>
